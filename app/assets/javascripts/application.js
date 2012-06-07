@@ -12,6 +12,7 @@
 //
 //= require modernizr
 //= require jquery-1.7.1.min
+//= require jquery.validate.min
 //= require jquery_ujs
 //= require spin.min
-//= require_tree .
+//= require stirchley

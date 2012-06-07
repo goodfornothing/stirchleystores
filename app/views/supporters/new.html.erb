@@ -1,6 +1,6 @@
 <h1>Become a supporter</h1>
 
-<%= simple_form_for @supporter do |f| %>
+<%= simple_form_for @supporter, :html => { :remote => true } do |f| %>
 	<%= f.input :name %>
 	<%= f.input :email %>
 	<%= f.button :submit, :value => "Subscribe for updates" %>

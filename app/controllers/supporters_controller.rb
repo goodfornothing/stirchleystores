@@ -6,11 +6,19 @@ class SupportersController < ApplicationController
   
   def create
     @supporter = Supporter.new(params[:supporter])
-    if @supporter.save
-      redirect_to subscribed_supporters_path
-    else
-      render :action => "new"
+    
+    respond_to do |format|
+      if @supporter.save
+        if request.xhr?
+          format.js { render :layout => false }  
+        else
+          format.html { redirect_to subscribed_supporters_path }
+        end
+      else
+        format.html { render :action => "new" }
+      end
     end
+    
   end
   
   def subscribed
