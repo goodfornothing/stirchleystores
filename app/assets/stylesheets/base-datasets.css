@@ -1,0 +1,34 @@
+/* =form */
+ 
+	form { 
+	  padding-bottom: 10px; 
+	}
+
+	form fieldset {
+	  padding: 0 0 10px;
+	}
+
+	form fieldset.controls { padding: 0; }  
+
+/* =label */
+ 
+	label { 
+	  display: block; 
+	  position: relative; 
+	}
+
+	fieldset.controls input { float: left; }
+	fieldset.controls p { width: 50%; float: left; }
+
+/* =input */
+
+	.string input { 
+		padding: 5px; 
+		margin-bottom: 1em; 
+		font-size: 1em;
+		border: 1px solid #cccccc;
+	}
+
+	.field_with_errors {
+		border-color: darkred;
+	}

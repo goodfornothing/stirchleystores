@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stirchley Stores</title>
+	<meta name="description" content="Stirchley Stores">
+	<meta name="keywords" content="food, coop, store, stirchley, birmingham">
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+</head>
+<body>
+	
+	<header>
+		<h1>Stirchley Stores</h1>
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
+		<p><a href="https://twitter.com/intent/tweet?via=stirchlystores&amp;url=http%3A%2F%2Fstirchleystores.co.uk&amp;text=Check out our stores">Tweet</a></p>
+		
+	</header>
+	
+	<section id="primary_content">
+		<%= yield %>
+	</section>
+
+</body>
+</html>
