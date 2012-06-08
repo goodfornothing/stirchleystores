@@ -11,16 +11,29 @@
 </head>
 <body>
 	
-	<header>
-		<h1>Stirchley Stores</h1>
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>
-		<p><a href="https://twitter.com/intent/tweet?via=stirchlystores&amp;url=http%3A%2F%2Fstirchleystores.co.uk&amp;text=Check out our stores">Tweet</a></p>
+	<header class="container">
+		<p id="branding">Stirchley Stores</p>
+		<nav id="external_navigation">
+			<ul>
+				<li><a href="http://bhmfoodcoop.wordpress.com/">Visit our Blog</a></li>
+				<li><a href="http://bhmfoodcoop.wordpress.com/contact/">Contact us</a></li>
+			</ul>
+		</nav>
 	</header>
 	
-	<section id="primary_content">
+	<nav id="social" class="container">
+		<ul>
+			<li><a class="facebook" href="https://facebook.com">Facebook</a></li>
+			<li><a class="flickr" href="https://flickr.com">Flickr</a></li>
+			<li><a class="twitter" href="https://twitter.com">Twitter</a></li>
+		</ul>	
+	</nav>
+	
+	<div id="primary_content" class="container">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
 		<%= yield %>
-	</section>
+	</div>
 
 </body>
 </html>

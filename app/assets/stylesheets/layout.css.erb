@@ -1,0 +1,132 @@
+@media all {
+
+	body { 
+		background-color: #d9d1c9;
+		background-repeat: repeat;
+	}
+   
+	.container {
+	    width: 800px; margin: 0 auto; 
+	    overflow: hidden; display: block;
+		position: relative;
+	}
+
+	/* Header */
+
+	header {
+		padding: 80px 0 50px;
+		border-bottom: 1px solid #908a8c;
+		background: url(<%= asset_path "stirchley-sign.png" %>) no-repeat 515px 20px;
+	}
+
+	header #branding {
+		font-family: LeagueGothicRegular, Arial, Sans-serif;
+		color: #427e36;
+		font-size: 48px;
+		text-transform: uppercase;
+		display: block;
+		margin: 0 auto;
+		width: 200px;
+		text-align: center;
+		line-height: 48px;
+	}
+	
+	header #external_navigation {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		top: 8px;
+		font-size: 12px;
+	}
+	
+	header #external_navigation li {
+		list-style-type: none;
+		display: inline-block;		
+		padding-right: 6px;
+	}
+
+	header #external_navigation li:last-child {
+		padding-left: 8px; 
+		border-left: 1px solid #696566;
+	}
+
+	header #external_navigation li a { color: #696566; }
+	
+	/* Social */
+	
+	#social { text-align: center; padding-top: 4px; }
+	
+	#social li {
+		display: inline-block;	
+		list-style-type: none;
+		margin-right: 6px;
+	}
+	
+	#social li a {
+		background: no-repeat 0 50%;
+		display: inline-block;
+		text-indent: -1337px;
+		height: 20px;
+		width: 20px;
+	}
+	
+	#social li a.twitter { background-image: url(<%= asset_path 'twitter.png' %>); }
+	#social li a.facebook { background-image: url(<%= asset_path 'facebook.png' %>);}
+	#social li a.flickr { background-image: url(<%= asset_path 'flickr.png' %>);}	
+	
+	/* Introduction */
+	
+	#introduction {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 30px;
+	}
+	
+	#introduction article {
+		width: 300px;
+		float: left;
+	}
+	
+	#introduction iframe {
+		float: right;
+	}
+	
+	/* Subscribe */
+	
+	#subscribe {
+		width: 100%;
+		color: #ffffff;
+		background: #098137;
+		text-align: center;
+		padding: 20px 0;
+		border-radius: 20px;
+		margin-bottom: 30px;
+		position: relative;
+	}
+	
+	#subscribe p {
+		margin: 0 0 15px;
+	}
+	
+	#subscribe a.icon {
+		color: #ffffff;
+		display: block;
+		font-size: 14px;
+		padding-left: 23px;
+		background: url(<%= asset_path 'twitter.png' %>) no-repeat 0 50%;
+	}
+	
+	#subscribe form {
+		padding: 5px 0 5px;
+		width: 600px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	#subscribe .spin {
+		position: absolute;
+		right: 80px;
+		top: 82px;
+	}
+	
+}

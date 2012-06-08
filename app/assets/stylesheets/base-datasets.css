@@ -1,14 +1,7 @@
 /* =form */
  
-	form { 
-	  padding-bottom: 10px; 
-	}
-
-	form fieldset {
-	  padding: 0 0 10px;
-	}
-
-	form fieldset.controls { padding: 0; }  
+	form { 	}
+	form fieldset { }
 
 /* =label */
  
@@ -17,18 +10,40 @@
 	  position: relative; 
 	}
 
-	fieldset.controls input { float: left; }
-	fieldset.controls p { width: 50%; float: left; }
-
 /* =input */
 
-	.string input { 
-		padding: 5px; 
-		margin-bottom: 1em; 
-		font-size: 1em;
-		border: 1px solid #cccccc;
+	.string { 
+		float: left; 
+		margin-right: 12px;
 	}
 
-	.field_with_errors {
+	.string input { 
+		padding: 8px; 
+		font-size: 16px;
+		border: none;
+		font-family: TrocchiRegular, Georgia, Serif;
+		color: #353434;
+		width: 200px;
+	}
+
+	.field_with_errors input {
 		border-color: darkred;
+	}
+	
+	.button {
+		font-family: TrocchiRegular, Georgia, Serif;
+		color: #ffffff;
+		border: 2px solid #ffffff;
+		background: #098137;
+		float: left;
+		padding: 6px;
+		border-radius: 10px;
+		width: 115px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	
+	.button[disabled='disabled'] {
+		opacity: 0.3;
+		cursor: default;
 	}

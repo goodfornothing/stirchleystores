@@ -1,7 +1,21 @@
-<h1>Become a supporter</h1>
+<section id="introduction">
 
-<%= simple_form_for @supporter, :html => { :remote => true } do |f| %>
-	<%= f.input :name %>
-	<%= f.input :email %>
-	<%= f.button :submit, :value => "Subscribe for updates" %>
-<% end %>
+	<article>
+		<h1>Stock up at Stirchley Stores</h1>
+		<p>We're a community-run enterprise, with the aim of supplying local, affordable, and ethical food.</p>
+		<p>Sustainability and community are at the heart of Stirchley Stores, empowering people to contribute to the rejuvenation of their High Street.</p>
+	</article>
+
+	<iframe src="http://player.vimeo.com/video/30501143" width="450" height="215" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	
+</section>
+
+<section id="subscribe">
+	<p>Show your support and sign up to our mailing list to keep up to date with our progress</p>
+	<%= simple_form_for @supporter, :html => { :remote => true } do |f| %>
+		<%= f.input :name %>
+		<%= f.input :email %>
+		<%= f.button :submit, :value => "Subscribe" %>
+	<% end %>
+	<span class="spin"></span>
+</section>
