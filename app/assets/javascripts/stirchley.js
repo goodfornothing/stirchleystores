@@ -56,7 +56,8 @@ $(document).ready(function() {
 	// AJAXy
 	
 	$('#new_supporter').on('ajax:error', function(event, xhr, status) {
-	  $(this).append('<p>'+xhr.responseText+'</p>')
+	  //$(this).append('<p>'+xhr.responseText+'</p>')
+		$(this).append('<p>Sorry, something went wrong. Please confirm your name and email and try again.</p>')
 	});
 	
 	$('#new_supporter').on('ajax:before', function(event, xhr, status) {
